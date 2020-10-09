@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "485386578219",
+    "firebase_url": "https://xbuy-outliers.firebaseio.com",
+    "project_id": "xbuy-outliers",
+    "storage_bucket": "xbuy-outliers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485386578219:android:a470906d5ea5f8a8a67d6e",
+        "android_client_info": {
+          "package_name": "com.outliers.xbuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485386578219-lc1hnvtee4ns67oq8kakus0pts21hb1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUt64f7S85JoQzRCxQc7Ei91HgebJewMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485386578219-lc1hnvtee4ns67oq8kakus0pts21hb1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
