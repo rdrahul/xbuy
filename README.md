@@ -1,16 +1,12 @@
-# xbuy
+# XBuy
 
-A new Flutter project.
+Create a Grocery cart by scanning items from simply scanning a paper. Then edit according to your needs.
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
+- install the dependencies `flutter pub get`
+- install the apk `flutter run`
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## demo
+https://drive.google.com/file/d/15VQ6hy6bYHyN8vxaG3i7Elob1H9q_EEF/view?usp=sharing
