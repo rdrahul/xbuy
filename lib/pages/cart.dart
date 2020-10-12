@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:xbuy/pages/grofers.dart';
 import 'package:xbuy/repository/product.dart';
+import 'package:intent/intent.dart' as android_intent;
+import 'package:intent/extra.dart' as android_extra;
+import 'package:intent/typedExtra.dart' as android_typedExtra;
+import 'package:intent/action.dart' as android_action;
 
 class CartScreen extends StatefulWidget {
   List<String> items = [];
@@ -71,7 +76,7 @@ class _CartScreenState extends State<CartScreen> {
           style: textStyleCustom(),
         ),
         Text(
-          "6 Items ",
+          "${items.length} Items ",
           style: textStyleCustom(),
         )
       ],
@@ -116,10 +121,17 @@ class _CartScreenState extends State<CartScreen> {
       return Container();
     }
 
-    return Padding(
-        padding: EdgeInsets.only(top: 10, left: 10),
-        child: Container(
-            width: 250, height: 50, child: CircularProgressIndicator()));
+    return Center(
+      heightFactor: 1,
+      widthFactor: 1,
+      child: SizedBox(
+        height: 40,
+        width: 40,
+        child: CircularProgressIndicator(
+          strokeWidth: 1.5,
+        ),
+      ),
+    );
   }
 
   Widget cartItemBuilder() {
@@ -163,7 +175,14 @@ class _CartScreenState extends State<CartScreen> {
               borderRadius: BorderRadius.circular(18.0),
               side: BorderSide(color: Colors.red)),
           onPressed: () {
-            print("Done");
+            android_intent.Intent()
+              ..setAction(android_action.Action.ACTION_VIEW)
+              ..setData(Uri(scheme: "grofers", host: "cart"))
+              ..startActivity().catchError((e) => print(e));
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(builder: (context) => GroferWebview()),
+            // );
           },
         )
       ],

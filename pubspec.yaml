@@ -33,6 +33,11 @@ dependencies:
   intl: ^0.16.1
   firebase_ml_vision: 
   http: any
+  flutter_inappwebview : 
+  device_apps:
+  android_intent:
+  url_launcher:
+  intent: 
 
 dev_dependencies:
   flutter_test:
